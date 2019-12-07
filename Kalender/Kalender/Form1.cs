@@ -92,6 +92,25 @@ namespace Kalender
                     "Somethings Wrong!";
             }*/
         }
+
+        private void btn_SignUp_SignUp_Click(object sender, EventArgs e)
+        {
+            SignUp _signUpClass = new SignUp();
+
+            if (_signUpClass.controllData(bMT_userName_SignUp.Text, bMT_Password_SignUp.Text)==true)
+            {
+                lbl_Status.Visible = false;
+                lbl_Status.Text ="LOGGED IN!";
+            }
+
+            else
+            {
+                pb_error.Visible = true;
+                lbl_Status.Text = "UPS!\n" +
+                                  "Somethings Wrong!";
+            }
+
+        }
     }
     
 }

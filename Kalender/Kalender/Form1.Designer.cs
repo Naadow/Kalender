@@ -46,6 +46,7 @@
             this.lbl_UserName_Register = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pnl_SignUp = new System.Windows.Forms.Panel();
+            this.pb_success = new System.Windows.Forms.PictureBox();
             this.pb_error = new System.Windows.Forms.PictureBox();
             this.lbl_Status = new System.Windows.Forms.Label();
             this.btn_BackToRegister_Register = new System.Windows.Forms.Button();
@@ -62,13 +63,12 @@
             this.bunifuDragControl2 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuDragControl3 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.pb_success = new System.Windows.Forms.PictureBox();
             this.pnl_Register.SuspendLayout();
             this.pnl_SignUp.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize) (this.pb_success)).BeginInit();
             ((System.ComponentModel.ISupportInitialize) (this.pb_error)).BeginInit();
             this.pnl_left.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize) (this.pb_success)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuDragControl1
@@ -309,6 +309,17 @@
             this.pnl_SignUp.Size = new System.Drawing.Size(616, 519);
             this.pnl_SignUp.TabIndex = 15;
             // 
+            // pb_success
+            // 
+            this.pb_success.Image = ((System.Drawing.Image) (resources.GetObject("pb_success.Image")));
+            this.pb_success.Location = new System.Drawing.Point(398, 148);
+            this.pb_success.Name = "pb_success";
+            this.pb_success.Size = new System.Drawing.Size(173, 142);
+            this.pb_success.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb_success.TabIndex = 18;
+            this.pb_success.TabStop = false;
+            this.pb_success.Visible = false;
+            // 
             // pb_error
             // 
             this.pb_error.Image = ((System.Drawing.Image) (resources.GetObject("pb_error.Image")));
@@ -327,7 +338,7 @@
             this.lbl_Status.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.lbl_Status.ForeColor = System.Drawing.Color.Black;
-            this.lbl_Status.Location = new System.Drawing.Point(389, 76);
+            this.lbl_Status.Location = new System.Drawing.Point(388, 76);
             this.lbl_Status.Name = "lbl_Status";
             this.lbl_Status.Size = new System.Drawing.Size(0, 22);
             this.lbl_Status.TabIndex = 16;
@@ -394,6 +405,7 @@
             this.btn_SignUp_SignUp.TabIndex = 11;
             this.btn_SignUp_SignUp.Text = "Sign Up";
             this.btn_SignUp_SignUp.UseVisualStyleBackColor = false;
+            this.btn_SignUp_SignUp.Click += new System.EventHandler(this.btn_SignUp_SignUp_Click);
             // 
             // lbl_Password_SignUp
             // 
@@ -505,17 +517,6 @@
             this.bunifuDragControl3.TargetControl = this.pnl_SignUp;
             this.bunifuDragControl3.Vertical = true;
             // 
-            // pb_success
-            // 
-            this.pb_success.Image = ((System.Drawing.Image) (resources.GetObject("pb_success.Image")));
-            this.pb_success.Location = new System.Drawing.Point(398, 148);
-            this.pb_success.Name = "pb_success";
-            this.pb_success.Size = new System.Drawing.Size(173, 142);
-            this.pb_success.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pb_success.TabIndex = 18;
-            this.pb_success.TabStop = false;
-            this.pb_success.Visible = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -531,11 +532,11 @@
             this.pnl_Register.PerformLayout();
             this.pnl_SignUp.ResumeLayout(false);
             this.pnl_SignUp.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize) (this.pb_success)).EndInit();
             ((System.ComponentModel.ISupportInitialize) (this.pb_error)).EndInit();
             this.pnl_left.ResumeLayout(false);
             this.pnl_left.PerformLayout();
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize) (this.pb_success)).EndInit();
             this.ResumeLayout(false);
         }
 

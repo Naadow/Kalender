@@ -28,6 +28,7 @@
           <e p="Settings.settings" t="Include" />
         </e>
         <e p="Query.cs" t="Include" />
+        <e p="SignUp.cs" t="Include" />
         <e p="UserColums.cs" t="Include" />
       </e>
       <e p="Kalender.sln" t="IncludeFlat" />

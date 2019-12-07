@@ -15,7 +15,7 @@ namespace Kalender
         public string Email { get; set; }
 
         public string DBConnectionString = "datasource = 127.0.0.1; port=3306;username=root;password=;database=calenderdb";
-
+        
         public MySqlConnection DatabaseConnection { get;  set; }
         public MySqlCommand CommandDatabase { get; set; }
 
