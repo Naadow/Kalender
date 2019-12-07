@@ -9,10 +9,7 @@ namespace Kalender
     class PasswordControll
     {
         public string Password { get; set; }
-        public string Hashedpassword { get; set; }
-
-
-
+        
         public bool samePassword(string password, string reenteredpassword)
         {
             if (password == reenteredpassword)
