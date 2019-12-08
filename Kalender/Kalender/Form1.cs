@@ -40,8 +40,6 @@ namespace Kalender
 
         private void Btn_Register_Register_Click(object sender, EventArgs e)
         {
-            
-            
             var queryclass = new Query();
             var passwordclass = new PasswordControll();
             var emailClass = new EmailContorll();

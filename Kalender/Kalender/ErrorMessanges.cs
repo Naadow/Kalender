@@ -6,7 +6,7 @@ namespace Kalender
     {
         public bool allEntered(string username, string password, string reenteredpassword, string email)
         {
-            if (username == null || password==null || reenteredpassword==null || email == null )
+            if (((string.IsNullOrWhiteSpace((username)) || string.IsNullOrWhiteSpace((password)) || string.IsNullOrWhiteSpace((reenteredpassword)) || string.IsNullOrWhiteSpace((email)))) ||  string.IsNullOrWhiteSpace((username)) && string.IsNullOrWhiteSpace((password)) && string.IsNullOrWhiteSpace((reenteredpassword)) && string.IsNullOrWhiteSpace((email)) )
             {
                 return false;
             }
