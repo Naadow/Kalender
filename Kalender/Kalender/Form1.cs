@@ -40,9 +40,15 @@ namespace Kalender
 
         private void Btn_Register_Register_Click(object sender, EventArgs e)
         {
+            
+            
             var queryclass = new Query();
             var passwordclass = new PasswordControll();
             var emailClass = new EmailContorll();
+            var errorclass = new ErrorMessanges();
+
+            bool allentered = errorclass.allEntered(bMT_Email.Text, bMT_Password_Register.Text, bMT_userName_Register.Text,
+                bMT_RePassword_Register.Text);
 
             bool controll = passwordclass.samePassword(bMT_Password_Register.Text, bMT_RePassword_Register.Text);
 
@@ -50,7 +56,7 @@ namespace Kalender
 
             switch (emailcontroll)
             {
-                case false when controll == true:
+                case false when controll == true && allentered==true :
                 {
                     var password = passwordclass.HashPassword(bMT_Password_Register.Text);
 
@@ -90,7 +96,6 @@ namespace Kalender
                 pb_error.Visible = true;
                 lbl_Status.Text = Error;
             }
-
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

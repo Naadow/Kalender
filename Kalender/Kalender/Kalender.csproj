@@ -74,6 +74,7 @@
   <ItemGroup>
     <Compile Include="Design.cs" />
     <Compile Include="EmailContorll.cs" />
+    <Compile Include="ErrorMessanges.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
