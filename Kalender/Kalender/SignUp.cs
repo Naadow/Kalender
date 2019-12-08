@@ -15,9 +15,9 @@ namespace Kalender
         private readonly UserColums _userClass = new UserColums();
         
 
-        public bool controllData(string username, string password)
+        public bool controllData(string email, string password)
         {
-            string select_command = $"select Username,Password from tbl_users where Username='{username}'";
+            string select_command = $"select Email,Password from tbl_users where Email='{email}'";
             _userClass.DBConnection(select_command);
             MySqlConnection databaseConnection = _userClass.DatabaseConnection;
             MySqlCommand commandDatabase = _userClass.CommandDatabase;
@@ -28,11 +28,11 @@ namespace Kalender
                 MySqlDataReader mySqlDataReader = _userClass.CommandDatabase.ExecuteReader();
                 while (mySqlDataReader.Read())
                 {
-                    var usernameresult = mySqlDataReader[0].ToString();
+                    var emaileresult = mySqlDataReader[0].ToString();
                     var passwordresult = mySqlDataReader[1].ToString();
                     bool verifyPassword = BCrypt.Net.BCrypt.Verify(password, passwordresult);
 
-                    if (usernameresult == username && verifyPassword == true)
+                    if (emaileresult == email && verifyPassword == true)
                     {
                         return true;
                     }

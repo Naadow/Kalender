@@ -6,6 +6,10 @@ namespace Kalender
 {
     public partial class Form1 : Form
     {
+        private const string Error = "UPS!\n" + "Somethings Wrong!";
+
+        private const string Success = "Successfully \n " +
+                                 "Registred";
         public Form1()
         {
             InitializeComponent();
@@ -36,9 +40,9 @@ namespace Kalender
 
         private void Btn_Register_Register_Click(object sender, EventArgs e)
         {
-            Query queryclass = new Query();
-            PasswordControll passwordclass = new PasswordControll();
-            EmailContorll emailClass = new EmailContorll();
+            var queryclass = new Query();
+            var passwordclass = new PasswordControll();
+            var emailClass = new EmailContorll();
 
             bool controll = passwordclass.samePassword(bMT_Password_Register.Text, bMT_RePassword_Register.Text);
 
@@ -46,68 +50,45 @@ namespace Kalender
 
             switch (emailcontroll)
             {
-                case false when controll==true:
+                case false when controll == true:
                 {
-                    string password = passwordclass.HashPassword(bMT_Password_Register.Text);
-                
+                    var password = passwordclass.HashPassword(bMT_Password_Register.Text);
+
                     queryclass.insertinto(bMT_userName_Register.Text, password, bMT_Email.Text);
                     pb_error.Visible = false;
                     pb_success.Visible = true;
-                    lbl_Status.Text = "Successfully \n " +
-                                      "Registred";
+                    lbl_Status.Text = Success;
                     break;
                 }
                 case false:
                 {
-                    if (controll==false)
-                    {
-                        pb_error.Visible = true;
-                        lbl_Status.Text = "UPS!\n" +
-                                          "Somethings Wrong!";
-                    }
+                    pb_error.Visible = true;
+                    lbl_Status.Text = Error;
 
                     break;
                 }
                 case true:
                     pb_error.Visible = true;
-                    lbl_Status.Text = "UPS!\n" +
-                                      "Somethings Wrong!";
+                    lbl_Status.Text = Error ;
                     break;
             }
-                
-
-           /* if (controll==true)
-            {
-                string password = passwordclass.HashPassword(bMT_Password_Register.Text);
-                
-                queryclass.insertinto(bMT_userName_Register.Text, password, bMT_Email.Text);
-                lbl_Status.Text = "Successfully \n " +
-                                  "Registred";
-            }
-
-            else if (controll==false)
-            {
-                pb_error.Visible = true;
-                lbl_Status.Text = "UPS!\n" +
-                    "Somethings Wrong!";
-            }*/
         }
 
         private void btn_SignUp_SignUp_Click(object sender, EventArgs e)
         {
-            SignUp _signUpClass = new SignUp();
+            var signUpClass = new SignUp();
 
-            if (_signUpClass.controllData(bMT_userName_SignUp.Text, bMT_Password_SignUp.Text)==true)
+            if (signUpClass.controllData(bMT_userName_SignUp.Text, bMT_Password_SignUp.Text)==true)
             {
-                lbl_Status.Visible = false;
+                pb_error.Visible = false;
+                pb_success.Visible = false;
                 lbl_Status.Text ="LOGGED IN!";
             }
 
             else
             {
                 pb_error.Visible = true;
-                lbl_Status.Text = "UPS!\n" +
-                                  "Somethings Wrong!";
+                lbl_Status.Text = Error;
             }
 
         }
