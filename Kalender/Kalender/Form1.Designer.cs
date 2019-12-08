@@ -95,9 +95,9 @@
             this.pnl_Register.Controls.Add(this.label2);
             this.pnl_Register.Controls.Add(this.pnl_SignUp);
             this.pnl_Register.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnl_Register.Location = new System.Drawing.Point(317, 0);
+            this.pnl_Register.Location = new System.Drawing.Point(322, 0);
             this.pnl_Register.Name = "pnl_Register";
-            this.pnl_Register.Size = new System.Drawing.Size(616, 519);
+            this.pnl_Register.Size = new System.Drawing.Size(608, 528);
             this.pnl_Register.TabIndex = 1;
             // 
             // btn_AlreadySignUp_Register
@@ -306,7 +306,7 @@
             this.pnl_SignUp.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnl_SignUp.Location = new System.Drawing.Point(0, 0);
             this.pnl_SignUp.Name = "pnl_SignUp";
-            this.pnl_SignUp.Size = new System.Drawing.Size(616, 519);
+            this.pnl_SignUp.Size = new System.Drawing.Size(608, 528);
             this.pnl_SignUp.TabIndex = 15;
             // 
             // pb_success
@@ -474,7 +474,7 @@
             this.pnl_left.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnl_left.Location = new System.Drawing.Point(0, 0);
             this.pnl_left.Name = "pnl_left";
-            this.pnl_left.Size = new System.Drawing.Size(316, 519);
+            this.pnl_left.Size = new System.Drawing.Size(316, 528);
             this.pnl_left.TabIndex = 0;
             // 
             // label1
@@ -497,6 +497,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // bunifuDragControl2
             // 
@@ -521,7 +522,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(933, 519);
+            this.ClientSize = new System.Drawing.Size(930, 528);
             this.Controls.Add(this.pnl_Register);
             this.Controls.Add(this.pnl_left);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
