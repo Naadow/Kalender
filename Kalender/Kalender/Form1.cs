@@ -85,8 +85,9 @@ namespace Kalender
             {
                 pb_error_SignUp.Visible = false;
                 pb_success_SignUp.Visible = false;
-                lbl_Status_SignUp.Text ="LOGGED IN!";
                 pnl_notloggedin.Hide();
+                pnl_Register.Hide();
+                pnl_SignUp.Hide();
                 pnl_MainMenue.Show();
                 pnl_loggedin.Show();
             }
@@ -106,6 +107,16 @@ namespace Kalender
         private void Label4_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void PictureBox3_Click(object sender, EventArgs e)
+        {
+            label3.Text = "Settings";
+        }
+
+        private void Pb_Contacts_Click(object sender, EventArgs e)
+        {
+            label3.Text = "Contacts";
         }
     }
 }

@@ -60,6 +60,8 @@
             this.lbl_UserName_SignUp = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.pnl_notloggedin = new System.Windows.Forms.Panel();
+            this.pnl_loggedin = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuDragControl2 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
@@ -67,11 +69,13 @@
             this.bunifuDragControl3 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuDragControl4 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.pnl_MainMenue = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.pnl_loggedin = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.bunifuDragControl5 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.bunifuDragControl6 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.pb_Settings = new System.Windows.Forms.PictureBox();
+            this.pb_Contacts = new System.Windows.Forms.PictureBox();
             this.pnl_Register.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_success_Register)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_error_Register)).BeginInit();
@@ -79,10 +83,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_success_SignUp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_error_SignUp)).BeginInit();
             this.pnl_notloggedin.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.pnl_MainMenue.SuspendLayout();
             this.pnl_loggedin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnl_MainMenue.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Settings)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Contacts)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuDragControl1
@@ -111,7 +117,7 @@
             this.pnl_Register.Controls.Add(this.lbl_UserName_Register);
             this.pnl_Register.Controls.Add(this.label2);
             this.pnl_Register.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnl_Register.Location = new System.Drawing.Point(-257, 0);
+            this.pnl_Register.Location = new System.Drawing.Point(-429, 0);
             this.pnl_Register.Name = "pnl_Register";
             this.pnl_Register.Size = new System.Drawing.Size(526, 458);
             this.pnl_Register.TabIndex = 1;
@@ -341,7 +347,7 @@
             this.pnl_SignUp.Controls.Add(this.lbl_UserName_SignUp);
             this.pnl_SignUp.Controls.Add(this.label13);
             this.pnl_SignUp.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnl_SignUp.Location = new System.Drawing.Point(-783, 0);
+            this.pnl_SignUp.Location = new System.Drawing.Point(-955, 0);
             this.pnl_SignUp.Name = "pnl_SignUp";
             this.pnl_SignUp.Size = new System.Drawing.Size(526, 458);
             this.pnl_SignUp.TabIndex = 15;
@@ -497,14 +503,35 @@
             // pnl_notloggedin
             // 
             this.pnl_notloggedin.BackColor = System.Drawing.Color.Crimson;
-            this.pnl_notloggedin.Controls.Add(this.pnl_loggedin);
             this.pnl_notloggedin.Controls.Add(this.label1);
             this.pnl_notloggedin.Controls.Add(this.pictureBox1);
             this.pnl_notloggedin.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnl_notloggedin.Location = new System.Drawing.Point(0, 0);
+            this.pnl_notloggedin.Location = new System.Drawing.Point(97, 0);
             this.pnl_notloggedin.Name = "pnl_notloggedin";
-            this.pnl_notloggedin.Size = new System.Drawing.Size(271, 458);
+            this.pnl_notloggedin.Size = new System.Drawing.Size(250, 458);
             this.pnl_notloggedin.TabIndex = 0;
+            // 
+            // pnl_loggedin
+            // 
+            this.pnl_loggedin.BackColor = System.Drawing.Color.Crimson;
+            this.pnl_loggedin.Controls.Add(this.pb_Contacts);
+            this.pnl_loggedin.Controls.Add(this.pb_Settings);
+            this.pnl_loggedin.Controls.Add(this.pictureBox2);
+            this.pnl_loggedin.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnl_loggedin.Location = new System.Drawing.Point(0, 0);
+            this.pnl_loggedin.Name = "pnl_loggedin";
+            this.pnl_loggedin.Size = new System.Drawing.Size(97, 458);
+            this.pnl_loggedin.TabIndex = 2;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(12, 31);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(69, 58);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
             // label1
             // 
@@ -558,10 +585,23 @@
             this.pnl_MainMenue.Controls.Add(this.label4);
             this.pnl_MainMenue.Controls.Add(this.label3);
             this.pnl_MainMenue.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnl_MainMenue.Location = new System.Drawing.Point(269, 0);
+            this.pnl_MainMenue.Location = new System.Drawing.Point(97, 0);
             this.pnl_MainMenue.Name = "pnl_MainMenue";
-            this.pnl_MainMenue.Size = new System.Drawing.Size(528, 458);
+            this.pnl_MainMenue.Size = new System.Drawing.Size(700, 458);
             this.pnl_MainMenue.TabIndex = 2;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Location = new System.Drawing.Point(665, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(23, 24);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "X";
+            this.label4.Click += new System.EventHandler(this.Label4_Click);
             // 
             // label3
             // 
@@ -572,42 +612,46 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "sdfasdfhsdgfjkgfnbsdmkgf";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(497, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(23, 24);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "X";
-            this.label4.Click += new System.EventHandler(this.Label4_Click);
-            // 
-            // pnl_loggedin
-            // 
-            this.pnl_loggedin.Controls.Add(this.pictureBox2);
-            this.pnl_loggedin.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnl_loggedin.Location = new System.Drawing.Point(0, 0);
-            this.pnl_loggedin.Name = "pnl_loggedin";
-            this.pnl_loggedin.Size = new System.Drawing.Size(97, 458);
-            this.pnl_loggedin.TabIndex = 2;
-            // 
             // bunifuElipse2
             // 
             this.bunifuElipse2.ElipseRadius = 25;
             this.bunifuElipse2.TargetControl = this.pictureBox1;
             // 
-            // pictureBox2
+            // bunifuDragControl5
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(12, 50);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(69, 58);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.bunifuDragControl5.Fixed = true;
+            this.bunifuDragControl5.Horizontal = true;
+            this.bunifuDragControl5.TargetControl = this.pnl_loggedin;
+            this.bunifuDragControl5.Vertical = true;
+            // 
+            // bunifuDragControl6
+            // 
+            this.bunifuDragControl6.Fixed = true;
+            this.bunifuDragControl6.Horizontal = true;
+            this.bunifuDragControl6.TargetControl = this.pnl_MainMenue;
+            this.bunifuDragControl6.Vertical = true;
+            // 
+            // pb_Settings
+            // 
+            this.pb_Settings.Image = ((System.Drawing.Image)(resources.GetObject("pb_Settings.Image")));
+            this.pb_Settings.Location = new System.Drawing.Point(12, 106);
+            this.pb_Settings.Name = "pb_Settings";
+            this.pb_Settings.Size = new System.Drawing.Size(69, 35);
+            this.pb_Settings.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb_Settings.TabIndex = 1;
+            this.pb_Settings.TabStop = false;
+            this.pb_Settings.Click += new System.EventHandler(this.PictureBox3_Click);
+            // 
+            // pb_Contacts
+            // 
+            this.pb_Contacts.Image = ((System.Drawing.Image)(resources.GetObject("pb_Contacts.Image")));
+            this.pb_Contacts.Location = new System.Drawing.Point(12, 170);
+            this.pb_Contacts.Name = "pb_Contacts";
+            this.pb_Contacts.Size = new System.Drawing.Size(69, 35);
+            this.pb_Contacts.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb_Contacts.TabIndex = 2;
+            this.pb_Contacts.TabStop = false;
+            this.pb_Contacts.Click += new System.EventHandler(this.Pb_Contacts_Click);
             // 
             // Form1
             // 
@@ -615,6 +659,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(797, 458);
             this.Controls.Add(this.pnl_notloggedin);
+            this.Controls.Add(this.pnl_loggedin);
             this.Controls.Add(this.pnl_SignUp);
             this.Controls.Add(this.pnl_Register);
             this.Controls.Add(this.pnl_MainMenue);
@@ -632,11 +677,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_error_SignUp)).EndInit();
             this.pnl_notloggedin.ResumeLayout(false);
             this.pnl_notloggedin.PerformLayout();
+            this.pnl_loggedin.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnl_MainMenue.ResumeLayout(false);
             this.pnl_MainMenue.PerformLayout();
-            this.pnl_loggedin.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Settings)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Contacts)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -684,6 +731,10 @@
         private System.Windows.Forms.Panel pnl_loggedin;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl5;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl6;
+        private System.Windows.Forms.PictureBox pb_Settings;
+        private System.Windows.Forms.PictureBox pb_Contacts;
     }
 }
 
