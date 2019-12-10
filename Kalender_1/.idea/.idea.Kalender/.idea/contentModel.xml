@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\TimLy\.Rider2019.2\config\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\TimLy\.Rider2019.2\config\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\TimLy\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\TimLy\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Kalender.1980858767.00" t="ExcludeRecursive" />
+    <e p="E:\Kalender\Kalender\Kalender" t="IncludeFlat">
+      <e p="Kalender" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Design.cs" t="Include" />
+        <e p="EmailContorll.cs" t="Include" />
+        <e p="ErrorMessanges.cs" t="Include" />
+        <e p="Form1.cs" t="Include" />
+        <e p="Form1.Designer.cs" t="Include" />
+        <e p="Form1.resx" t="Include" />
+        <e p="Kalender.csproj" t="IncludeRecursive" />
+        <e p="LICENSE.txt" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="PasswordControll.cs" t="Include" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+          <e p="Settings.Designer.cs" t="Include" />
+          <e p="Settings.settings" t="Include" />
+        </e>
+        <e p="Query.cs" t="Include" />
+        <e p="SignUp.cs" t="Include" />
+        <e p="UserColums.cs" t="Include" />
+      </e>
+      <e p="Kalender.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
