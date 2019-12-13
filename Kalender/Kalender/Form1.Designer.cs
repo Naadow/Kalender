@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            BunifuAnimatorNS.Animation animation16 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation15 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.pnl_Register = new System.Windows.Forms.Panel();
@@ -60,22 +62,25 @@
             this.lbl_UserName_SignUp = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.pnl_notloggedin = new System.Windows.Forms.Panel();
-            this.pnl_loggedin = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pnl_loggedin = new System.Windows.Forms.Panel();
+            this.pb_Contacts = new System.Windows.Forms.PictureBox();
+            this.pb_Settings = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.bunifuDragControl2 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuDragControl3 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuDragControl4 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.pnl_MainMenue = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuDragControl5 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuDragControl6 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.pb_Settings = new System.Windows.Forms.PictureBox();
-            this.pb_Contacts = new System.Windows.Forms.PictureBox();
+            this.LogoAnimation = new BunifuAnimatorNS.BunifuTransition(this.components);
+            this.PanelAnimation = new BunifuAnimatorNS.BunifuTransition(this.components);
+            this.bunifuDatepicker1 = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.label3 = new System.Windows.Forms.Label();
             this.pnl_Register.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_success_Register)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_error_Register)).BeginInit();
@@ -83,12 +88,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_success_SignUp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_error_SignUp)).BeginInit();
             this.pnl_notloggedin.SuspendLayout();
-            this.pnl_loggedin.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.pnl_MainMenue.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_Settings)).BeginInit();
+            this.pnl_loggedin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Contacts)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Settings)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pnl_MainMenue.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuDragControl1
@@ -116,6 +121,8 @@
             this.pnl_Register.Controls.Add(this.bMT_userName_Register);
             this.pnl_Register.Controls.Add(this.lbl_UserName_Register);
             this.pnl_Register.Controls.Add(this.label2);
+            this.PanelAnimation.SetDecoration(this.pnl_Register, BunifuAnimatorNS.DecorationType.None);
+            this.LogoAnimation.SetDecoration(this.pnl_Register, BunifuAnimatorNS.DecorationType.None);
             this.pnl_Register.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnl_Register.Location = new System.Drawing.Point(-429, 0);
             this.pnl_Register.Name = "pnl_Register";
@@ -126,6 +133,8 @@
             // 
             this.lbl_Status_Register.AutoSize = true;
             this.lbl_Status_Register.BackColor = System.Drawing.Color.Transparent;
+            this.LogoAnimation.SetDecoration(this.lbl_Status_Register, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.lbl_Status_Register, BunifuAnimatorNS.DecorationType.None);
             this.lbl_Status_Register.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Status_Register.ForeColor = System.Drawing.Color.Black;
             this.lbl_Status_Register.Location = new System.Drawing.Point(338, 66);
@@ -135,6 +144,8 @@
             // 
             // pb_success_Register
             // 
+            this.LogoAnimation.SetDecoration(this.pb_success_Register, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.pb_success_Register, BunifuAnimatorNS.DecorationType.None);
             this.pb_success_Register.Image = ((System.Drawing.Image)(resources.GetObject("pb_success_Register.Image")));
             this.pb_success_Register.Location = new System.Drawing.Point(342, 128);
             this.pb_success_Register.Name = "pb_success_Register";
@@ -146,6 +157,8 @@
             // 
             // pb_error_Register
             // 
+            this.LogoAnimation.SetDecoration(this.pb_error_Register, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.pb_error_Register, BunifuAnimatorNS.DecorationType.None);
             this.pb_error_Register.Image = ((System.Drawing.Image)(resources.GetObject("pb_error_Register.Image")));
             this.pb_error_Register.Location = new System.Drawing.Point(341, 128);
             this.pb_error_Register.Name = "pb_error_Register";
@@ -158,6 +171,8 @@
             // btn_AlreadySignUp_Register
             // 
             this.btn_AlreadySignUp_Register.BackColor = System.Drawing.Color.Crimson;
+            this.LogoAnimation.SetDecoration(this.btn_AlreadySignUp_Register, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.btn_AlreadySignUp_Register, BunifuAnimatorNS.DecorationType.None);
             this.btn_AlreadySignUp_Register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_AlreadySignUp_Register.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_AlreadySignUp_Register.ForeColor = System.Drawing.SystemColors.Control;
@@ -172,6 +187,8 @@
             // bMT_Password_Register
             // 
             this.bMT_Password_Register.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PanelAnimation.SetDecoration(this.bMT_Password_Register, BunifuAnimatorNS.DecorationType.None);
+            this.LogoAnimation.SetDecoration(this.bMT_Password_Register, BunifuAnimatorNS.DecorationType.None);
             this.bMT_Password_Register.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.bMT_Password_Register.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bMT_Password_Register.HintForeColor = System.Drawing.Color.Empty;
@@ -192,6 +209,8 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.LogoAnimation.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
             this.label7.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Red;
             this.label7.Location = new System.Drawing.Point(497, 9);
@@ -204,6 +223,8 @@
             // btn_Register_Register
             // 
             this.btn_Register_Register.BackColor = System.Drawing.Color.Crimson;
+            this.LogoAnimation.SetDecoration(this.btn_Register_Register, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.btn_Register_Register, BunifuAnimatorNS.DecorationType.None);
             this.btn_Register_Register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Register_Register.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Register_Register.ForeColor = System.Drawing.SystemColors.Control;
@@ -218,6 +239,8 @@
             // bMT_Email
             // 
             this.bMT_Email.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PanelAnimation.SetDecoration(this.bMT_Email, BunifuAnimatorNS.DecorationType.None);
+            this.LogoAnimation.SetDecoration(this.bMT_Email, BunifuAnimatorNS.DecorationType.None);
             this.bMT_Email.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.bMT_Email.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bMT_Email.HintForeColor = System.Drawing.Color.Empty;
@@ -238,6 +261,8 @@
             // 
             this.lbl_Email_PNL_Register.AutoSize = true;
             this.lbl_Email_PNL_Register.BackColor = System.Drawing.Color.Transparent;
+            this.LogoAnimation.SetDecoration(this.lbl_Email_PNL_Register, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.lbl_Email_PNL_Register, BunifuAnimatorNS.DecorationType.None);
             this.lbl_Email_PNL_Register.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Email_PNL_Register.ForeColor = System.Drawing.Color.Red;
             this.lbl_Email_PNL_Register.Location = new System.Drawing.Point(15, 310);
@@ -249,6 +274,8 @@
             // bMT_RePassword_Register
             // 
             this.bMT_RePassword_Register.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PanelAnimation.SetDecoration(this.bMT_RePassword_Register, BunifuAnimatorNS.DecorationType.None);
+            this.LogoAnimation.SetDecoration(this.bMT_RePassword_Register, BunifuAnimatorNS.DecorationType.None);
             this.bMT_RePassword_Register.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.bMT_RePassword_Register.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bMT_RePassword_Register.HintForeColor = System.Drawing.Color.Empty;
@@ -269,6 +296,8 @@
             // 
             this.lbl_ReenterPassword.AutoSize = true;
             this.lbl_ReenterPassword.BackColor = System.Drawing.Color.Transparent;
+            this.LogoAnimation.SetDecoration(this.lbl_ReenterPassword, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.lbl_ReenterPassword, BunifuAnimatorNS.DecorationType.None);
             this.lbl_ReenterPassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_ReenterPassword.ForeColor = System.Drawing.Color.Red;
             this.lbl_ReenterPassword.Location = new System.Drawing.Point(15, 230);
@@ -281,6 +310,8 @@
             // 
             this.lbl_Password_Register.AutoSize = true;
             this.lbl_Password_Register.BackColor = System.Drawing.Color.Transparent;
+            this.LogoAnimation.SetDecoration(this.lbl_Password_Register, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.lbl_Password_Register, BunifuAnimatorNS.DecorationType.None);
             this.lbl_Password_Register.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Password_Register.ForeColor = System.Drawing.Color.Red;
             this.lbl_Password_Register.Location = new System.Drawing.Point(15, 145);
@@ -292,6 +323,8 @@
             // bMT_userName_Register
             // 
             this.bMT_userName_Register.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PanelAnimation.SetDecoration(this.bMT_userName_Register, BunifuAnimatorNS.DecorationType.None);
+            this.LogoAnimation.SetDecoration(this.bMT_userName_Register, BunifuAnimatorNS.DecorationType.None);
             this.bMT_userName_Register.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.bMT_userName_Register.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bMT_userName_Register.HintForeColor = System.Drawing.Color.Empty;
@@ -312,6 +345,8 @@
             // 
             this.lbl_UserName_Register.AutoSize = true;
             this.lbl_UserName_Register.BackColor = System.Drawing.Color.Transparent;
+            this.LogoAnimation.SetDecoration(this.lbl_UserName_Register, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.lbl_UserName_Register, BunifuAnimatorNS.DecorationType.None);
             this.lbl_UserName_Register.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_UserName_Register.ForeColor = System.Drawing.Color.Red;
             this.lbl_UserName_Register.Location = new System.Drawing.Point(14, 67);
@@ -324,6 +359,8 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.LogoAnimation.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
             this.label2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Red;
             this.label2.Location = new System.Drawing.Point(15, 31);
@@ -346,6 +383,8 @@
             this.pnl_SignUp.Controls.Add(this.bMT_userName_SignUp);
             this.pnl_SignUp.Controls.Add(this.lbl_UserName_SignUp);
             this.pnl_SignUp.Controls.Add(this.label13);
+            this.PanelAnimation.SetDecoration(this.pnl_SignUp, BunifuAnimatorNS.DecorationType.None);
+            this.LogoAnimation.SetDecoration(this.pnl_SignUp, BunifuAnimatorNS.DecorationType.None);
             this.pnl_SignUp.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnl_SignUp.Location = new System.Drawing.Point(-955, 0);
             this.pnl_SignUp.Name = "pnl_SignUp";
@@ -354,6 +393,8 @@
             // 
             // pb_success_SignUp
             // 
+            this.LogoAnimation.SetDecoration(this.pb_success_SignUp, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.pb_success_SignUp, BunifuAnimatorNS.DecorationType.None);
             this.pb_success_SignUp.Image = ((System.Drawing.Image)(resources.GetObject("pb_success_SignUp.Image")));
             this.pb_success_SignUp.Location = new System.Drawing.Point(341, 128);
             this.pb_success_SignUp.Name = "pb_success_SignUp";
@@ -365,6 +406,8 @@
             // 
             // pb_error_SignUp
             // 
+            this.LogoAnimation.SetDecoration(this.pb_error_SignUp, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.pb_error_SignUp, BunifuAnimatorNS.DecorationType.None);
             this.pb_error_SignUp.Image = ((System.Drawing.Image)(resources.GetObject("pb_error_SignUp.Image")));
             this.pb_error_SignUp.Location = new System.Drawing.Point(341, 128);
             this.pb_error_SignUp.Name = "pb_error_SignUp";
@@ -378,6 +421,8 @@
             // 
             this.lbl_Status_SignUp.AutoSize = true;
             this.lbl_Status_SignUp.BackColor = System.Drawing.Color.Transparent;
+            this.LogoAnimation.SetDecoration(this.lbl_Status_SignUp, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.lbl_Status_SignUp, BunifuAnimatorNS.DecorationType.None);
             this.lbl_Status_SignUp.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Status_SignUp.ForeColor = System.Drawing.Color.Black;
             this.lbl_Status_SignUp.Location = new System.Drawing.Point(338, 66);
@@ -388,6 +433,8 @@
             // btn_BackToRegister_Register
             // 
             this.btn_BackToRegister_Register.BackColor = System.Drawing.Color.Crimson;
+            this.LogoAnimation.SetDecoration(this.btn_BackToRegister_Register, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.btn_BackToRegister_Register, BunifuAnimatorNS.DecorationType.None);
             this.btn_BackToRegister_Register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_BackToRegister_Register.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_BackToRegister_Register.ForeColor = System.Drawing.SystemColors.Control;
@@ -402,6 +449,8 @@
             // bMT_Password_SignUp
             // 
             this.bMT_Password_SignUp.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PanelAnimation.SetDecoration(this.bMT_Password_SignUp, BunifuAnimatorNS.DecorationType.None);
+            this.LogoAnimation.SetDecoration(this.bMT_Password_SignUp, BunifuAnimatorNS.DecorationType.None);
             this.bMT_Password_SignUp.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.bMT_Password_SignUp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bMT_Password_SignUp.HintForeColor = System.Drawing.Color.Empty;
@@ -422,6 +471,8 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.LogoAnimation.SetDecoration(this.label8, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.label8, BunifuAnimatorNS.DecorationType.None);
             this.label8.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Red;
             this.label8.Location = new System.Drawing.Point(497, 9);
@@ -434,6 +485,8 @@
             // btn_SignUp_SignUp
             // 
             this.btn_SignUp_SignUp.BackColor = System.Drawing.Color.Crimson;
+            this.LogoAnimation.SetDecoration(this.btn_SignUp_SignUp, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.btn_SignUp_SignUp, BunifuAnimatorNS.DecorationType.None);
             this.btn_SignUp_SignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_SignUp_SignUp.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_SignUp_SignUp.ForeColor = System.Drawing.SystemColors.Control;
@@ -449,6 +502,8 @@
             // 
             this.lbl_Password_SignUp.AutoSize = true;
             this.lbl_Password_SignUp.BackColor = System.Drawing.Color.Transparent;
+            this.LogoAnimation.SetDecoration(this.lbl_Password_SignUp, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.lbl_Password_SignUp, BunifuAnimatorNS.DecorationType.None);
             this.lbl_Password_SignUp.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Password_SignUp.ForeColor = System.Drawing.Color.Red;
             this.lbl_Password_SignUp.Location = new System.Drawing.Point(15, 145);
@@ -460,6 +515,8 @@
             // bMT_userName_SignUp
             // 
             this.bMT_userName_SignUp.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PanelAnimation.SetDecoration(this.bMT_userName_SignUp, BunifuAnimatorNS.DecorationType.None);
+            this.LogoAnimation.SetDecoration(this.bMT_userName_SignUp, BunifuAnimatorNS.DecorationType.None);
             this.bMT_userName_SignUp.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.bMT_userName_SignUp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bMT_userName_SignUp.HintForeColor = System.Drawing.Color.Empty;
@@ -480,6 +537,8 @@
             // 
             this.lbl_UserName_SignUp.AutoSize = true;
             this.lbl_UserName_SignUp.BackColor = System.Drawing.Color.Transparent;
+            this.LogoAnimation.SetDecoration(this.lbl_UserName_SignUp, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.lbl_UserName_SignUp, BunifuAnimatorNS.DecorationType.None);
             this.lbl_UserName_SignUp.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_UserName_SignUp.ForeColor = System.Drawing.Color.Red;
             this.lbl_UserName_SignUp.Location = new System.Drawing.Point(14, 67);
@@ -492,6 +551,8 @@
             // 
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.LogoAnimation.SetDecoration(this.label13, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.label13, BunifuAnimatorNS.DecorationType.None);
             this.label13.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Red;
             this.label13.Location = new System.Drawing.Point(15, 31);
@@ -505,37 +566,19 @@
             this.pnl_notloggedin.BackColor = System.Drawing.Color.Crimson;
             this.pnl_notloggedin.Controls.Add(this.label1);
             this.pnl_notloggedin.Controls.Add(this.pictureBox1);
+            this.PanelAnimation.SetDecoration(this.pnl_notloggedin, BunifuAnimatorNS.DecorationType.None);
+            this.LogoAnimation.SetDecoration(this.pnl_notloggedin, BunifuAnimatorNS.DecorationType.None);
             this.pnl_notloggedin.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnl_notloggedin.Location = new System.Drawing.Point(97, 0);
             this.pnl_notloggedin.Name = "pnl_notloggedin";
-            this.pnl_notloggedin.Size = new System.Drawing.Size(250, 458);
+            this.pnl_notloggedin.Size = new System.Drawing.Size(32, 458);
             this.pnl_notloggedin.TabIndex = 0;
-            // 
-            // pnl_loggedin
-            // 
-            this.pnl_loggedin.BackColor = System.Drawing.Color.Crimson;
-            this.pnl_loggedin.Controls.Add(this.pb_Contacts);
-            this.pnl_loggedin.Controls.Add(this.pb_Settings);
-            this.pnl_loggedin.Controls.Add(this.pictureBox2);
-            this.pnl_loggedin.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnl_loggedin.Location = new System.Drawing.Point(0, 0);
-            this.pnl_loggedin.Name = "pnl_loggedin";
-            this.pnl_loggedin.Size = new System.Drawing.Size(97, 458);
-            this.pnl_loggedin.TabIndex = 2;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(12, 31);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(69, 58);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.LogoAnimation.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
             this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(71, 327);
             this.label1.Name = "label1";
@@ -545,6 +588,8 @@
             // 
             // pictureBox1
             // 
+            this.LogoAnimation.SetDecoration(this.pictureBox1, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.pictureBox1, BunifuAnimatorNS.DecorationType.None);
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(29, 91);
             this.pictureBox1.Name = "pictureBox1";
@@ -553,6 +598,58 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // pnl_loggedin
+            // 
+            this.pnl_loggedin.BackColor = System.Drawing.Color.Crimson;
+            this.pnl_loggedin.Controls.Add(this.pb_Contacts);
+            this.pnl_loggedin.Controls.Add(this.pb_Settings);
+            this.pnl_loggedin.Controls.Add(this.pictureBox2);
+            this.PanelAnimation.SetDecoration(this.pnl_loggedin, BunifuAnimatorNS.DecorationType.None);
+            this.LogoAnimation.SetDecoration(this.pnl_loggedin, BunifuAnimatorNS.DecorationType.None);
+            this.pnl_loggedin.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnl_loggedin.Location = new System.Drawing.Point(0, 0);
+            this.pnl_loggedin.Name = "pnl_loggedin";
+            this.pnl_loggedin.Size = new System.Drawing.Size(97, 458);
+            this.pnl_loggedin.TabIndex = 2;
+            // 
+            // pb_Contacts
+            // 
+            this.LogoAnimation.SetDecoration(this.pb_Contacts, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.pb_Contacts, BunifuAnimatorNS.DecorationType.None);
+            this.pb_Contacts.Image = ((System.Drawing.Image)(resources.GetObject("pb_Contacts.Image")));
+            this.pb_Contacts.Location = new System.Drawing.Point(12, 170);
+            this.pb_Contacts.Name = "pb_Contacts";
+            this.pb_Contacts.Size = new System.Drawing.Size(69, 35);
+            this.pb_Contacts.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb_Contacts.TabIndex = 2;
+            this.pb_Contacts.TabStop = false;
+            this.pb_Contacts.Click += new System.EventHandler(this.Pb_Contacts_Click);
+            // 
+            // pb_Settings
+            // 
+            this.LogoAnimation.SetDecoration(this.pb_Settings, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.pb_Settings, BunifuAnimatorNS.DecorationType.None);
+            this.pb_Settings.Image = ((System.Drawing.Image)(resources.GetObject("pb_Settings.Image")));
+            this.pb_Settings.Location = new System.Drawing.Point(12, 106);
+            this.pb_Settings.Name = "pb_Settings";
+            this.pb_Settings.Size = new System.Drawing.Size(69, 35);
+            this.pb_Settings.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb_Settings.TabIndex = 1;
+            this.pb_Settings.TabStop = false;
+            this.pb_Settings.Click += new System.EventHandler(this.PictureBox3_Click);
+            // 
+            // pictureBox2
+            // 
+            this.LogoAnimation.SetDecoration(this.pictureBox2, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.pictureBox2, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(12, 31);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(69, 58);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
             // bunifuDragControl2
             // 
@@ -582,8 +679,11 @@
             // 
             // pnl_MainMenue
             // 
-            this.pnl_MainMenue.Controls.Add(this.label4);
             this.pnl_MainMenue.Controls.Add(this.label3);
+            this.pnl_MainMenue.Controls.Add(this.bunifuDatepicker1);
+            this.pnl_MainMenue.Controls.Add(this.label4);
+            this.PanelAnimation.SetDecoration(this.pnl_MainMenue, BunifuAnimatorNS.DecorationType.None);
+            this.LogoAnimation.SetDecoration(this.pnl_MainMenue, BunifuAnimatorNS.DecorationType.None);
             this.pnl_MainMenue.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnl_MainMenue.Location = new System.Drawing.Point(97, 0);
             this.pnl_MainMenue.Name = "pnl_MainMenue";
@@ -594,23 +694,16 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.LogoAnimation.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
             this.label4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(665, 9);
+            this.label4.Location = new System.Drawing.Point(765, 9);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(23, 24);
             this.label4.TabIndex = 13;
             this.label4.Text = "X";
             this.label4.Click += new System.EventHandler(this.Label4_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(145, 95);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(130, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "sdfasdfhsdgfjkgfnbsdmkgf";
             // 
             // bunifuElipse2
             // 
@@ -631,27 +724,74 @@
             this.bunifuDragControl6.TargetControl = this.pnl_MainMenue;
             this.bunifuDragControl6.Vertical = true;
             // 
-            // pb_Settings
+            // LogoAnimation
             // 
-            this.pb_Settings.Image = ((System.Drawing.Image)(resources.GetObject("pb_Settings.Image")));
-            this.pb_Settings.Location = new System.Drawing.Point(12, 106);
-            this.pb_Settings.Name = "pb_Settings";
-            this.pb_Settings.Size = new System.Drawing.Size(69, 35);
-            this.pb_Settings.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pb_Settings.TabIndex = 1;
-            this.pb_Settings.TabStop = false;
-            this.pb_Settings.Click += new System.EventHandler(this.PictureBox3_Click);
+            this.LogoAnimation.AnimationType = BunifuAnimatorNS.AnimationType.Mosaic;
+            this.LogoAnimation.Cursor = null;
+            animation16.AnimateOnlyDifferences = true;
+            animation16.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation16.BlindCoeff")));
+            animation16.LeafCoeff = 0F;
+            animation16.MaxTime = 1F;
+            animation16.MinTime = 0F;
+            animation16.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation16.MosaicCoeff")));
+            animation16.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation16.MosaicShift")));
+            animation16.MosaicSize = 20;
+            animation16.Padding = new System.Windows.Forms.Padding(30);
+            animation16.RotateCoeff = 0F;
+            animation16.RotateLimit = 0F;
+            animation16.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation16.ScaleCoeff")));
+            animation16.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation16.SlideCoeff")));
+            animation16.TimeCoeff = 0F;
+            animation16.TransparencyCoeff = 0F;
+            this.LogoAnimation.DefaultAnimation = animation16;
             // 
-            // pb_Contacts
+            // PanelAnimation
             // 
-            this.pb_Contacts.Image = ((System.Drawing.Image)(resources.GetObject("pb_Contacts.Image")));
-            this.pb_Contacts.Location = new System.Drawing.Point(12, 170);
-            this.pb_Contacts.Name = "pb_Contacts";
-            this.pb_Contacts.Size = new System.Drawing.Size(69, 35);
-            this.pb_Contacts.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pb_Contacts.TabIndex = 2;
-            this.pb_Contacts.TabStop = false;
-            this.pb_Contacts.Click += new System.EventHandler(this.Pb_Contacts_Click);
+            this.PanelAnimation.AnimationType = BunifuAnimatorNS.AnimationType.Leaf;
+            this.PanelAnimation.Cursor = null;
+            animation15.AnimateOnlyDifferences = true;
+            animation15.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation15.BlindCoeff")));
+            animation15.LeafCoeff = 1F;
+            animation15.MaxTime = 1F;
+            animation15.MinTime = 0F;
+            animation15.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation15.MosaicCoeff")));
+            animation15.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation15.MosaicShift")));
+            animation15.MosaicSize = 0;
+            animation15.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation15.RotateCoeff = 0F;
+            animation15.RotateLimit = 0F;
+            animation15.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation15.ScaleCoeff")));
+            animation15.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation15.SlideCoeff")));
+            animation15.TimeCoeff = 0F;
+            animation15.TransparencyCoeff = 0F;
+            this.PanelAnimation.DefaultAnimation = animation15;
+            // 
+            // bunifuDatepicker1
+            // 
+            this.bunifuDatepicker1.BackColor = System.Drawing.Color.SeaGreen;
+            this.bunifuDatepicker1.BorderRadius = 0;
+            this.PanelAnimation.SetDecoration(this.bunifuDatepicker1, BunifuAnimatorNS.DecorationType.None);
+            this.LogoAnimation.SetDecoration(this.bunifuDatepicker1, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuDatepicker1.ForeColor = System.Drawing.Color.White;
+            this.bunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.bunifuDatepicker1.FormatCustom = null;
+            this.bunifuDatepicker1.Location = new System.Drawing.Point(202, 23);
+            this.bunifuDatepicker1.Name = "bunifuDatepicker1";
+            this.bunifuDatepicker1.Size = new System.Drawing.Size(329, 66);
+            this.bunifuDatepicker1.TabIndex = 15;
+            this.bunifuDatepicker1.Value = new System.DateTime(2019, 12, 13, 19, 19, 18, 837);
+            this.bunifuDatepicker1.onValueChanged += new System.EventHandler(this.BunifuDatepicker1_onValueChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.LogoAnimation.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
+            this.label3.Location = new System.Drawing.Point(228, 261);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "label3";
             // 
             // Form1
             // 
@@ -663,6 +803,8 @@
             this.Controls.Add(this.pnl_SignUp);
             this.Controls.Add(this.pnl_Register);
             this.Controls.Add(this.pnl_MainMenue);
+            this.PanelAnimation.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
+            this.LogoAnimation.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
@@ -677,13 +819,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_error_SignUp)).EndInit();
             this.pnl_notloggedin.ResumeLayout(false);
             this.pnl_notloggedin.PerformLayout();
-            this.pnl_loggedin.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnl_loggedin.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Contacts)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Settings)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.pnl_MainMenue.ResumeLayout(false);
             this.pnl_MainMenue.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_Settings)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_Contacts)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -726,7 +868,6 @@
         private System.Windows.Forms.PictureBox pb_success_Register;
         private System.Windows.Forms.Label lbl_Status_Register;
         private System.Windows.Forms.Panel pnl_MainMenue;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel pnl_loggedin;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
@@ -735,6 +876,10 @@
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl6;
         private System.Windows.Forms.PictureBox pb_Settings;
         private System.Windows.Forms.PictureBox pb_Contacts;
+        private BunifuAnimatorNS.BunifuTransition LogoAnimation;
+        private BunifuAnimatorNS.BunifuTransition PanelAnimation;
+        private Bunifu.Framework.UI.BunifuDatepicker bunifuDatepicker1;
+        private System.Windows.Forms.Label label3;
     }
 }
 

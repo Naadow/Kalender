@@ -88,8 +88,12 @@ namespace Kalender
                 pnl_notloggedin.Hide();
                 pnl_Register.Hide();
                 pnl_SignUp.Hide();
-                pnl_MainMenue.Show();
-                pnl_loggedin.Show();
+                LogoAnimation.HideSync(pictureBox1);
+                pnl_SignUp.Visible = false;
+                PanelAnimation.ShowSync(pnl_loggedin);
+                PanelAnimation.ShowSync(pnl_MainMenue);
+
+
             }
 
             else
@@ -111,12 +115,16 @@ namespace Kalender
 
         private void PictureBox3_Click(object sender, EventArgs e)
         {
-            label3.Text = "Settings";
+            
         }
 
         private void Pb_Contacts_Click(object sender, EventArgs e)
         {
-            label3.Text = "Contacts";
+        }
+
+        private void BunifuDatepicker1_onValueChanged(object sender, EventArgs e)
+        {
+            label3.Text = bunifuDatepicker1.ActiveControl.Text;
         }
     }
 }
