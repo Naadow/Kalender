@@ -21,6 +21,7 @@ namespace Kalender
             {
                 _userClass.DatabaseConnection.Open();
                 MySqlDataReader myReader = _userClass.CommandDatabase.ExecuteReader();
+                databaseConnection.Close();
                 while (myReader.Read())
                 {
                     var readresult = myReader[0].ToString();

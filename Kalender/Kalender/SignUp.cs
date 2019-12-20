@@ -31,6 +31,7 @@ namespace Kalender
                     var emaileresult = mySqlDataReader[0].ToString();
                     var passwordresult = mySqlDataReader[1].ToString();
                     bool verifyPassword = BCrypt.Net.BCrypt.Verify(password, passwordresult);
+                    databaseConnection.Close();
 
                     if (emaileresult == email && verifyPassword == true)
                     {
