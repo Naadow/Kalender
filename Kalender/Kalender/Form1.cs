@@ -24,6 +24,7 @@ namespace Kalender
 
         private void Label8_Click(object sender, EventArgs e)
         {
+
             Application.Exit();
         }
 
@@ -122,10 +123,7 @@ namespace Kalender
         {
         }
 
-        private void BunifuDatepicker1_onValueChanged(object sender, EventArgs e)
-        {
-            label3.Text = bunifuDatepicker1.ActiveControl.Text;
-        }
+
     }
 }
 

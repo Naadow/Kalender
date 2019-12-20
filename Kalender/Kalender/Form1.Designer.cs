@@ -74,13 +74,13 @@
             this.bunifuDragControl4 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.pnl_MainMenue = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.bunifuDatepicker1 = new Bunifu.Framework.UI.BunifuDatepicker();
             this.label4 = new System.Windows.Forms.Label();
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuDragControl5 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuDragControl6 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.LogoAnimation = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.PanelAnimation = new BunifuAnimatorNS.BunifuTransition(this.components);
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.pnl_Register.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_success_Register)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_error_Register)).BeginInit();
@@ -679,8 +679,8 @@
             // 
             // pnl_MainMenue
             // 
+            this.pnl_MainMenue.Controls.Add(this.monthCalendar1);
             this.pnl_MainMenue.Controls.Add(this.label3);
-            this.pnl_MainMenue.Controls.Add(this.bunifuDatepicker1);
             this.pnl_MainMenue.Controls.Add(this.label4);
             this.PanelAnimation.SetDecoration(this.pnl_MainMenue, BunifuAnimatorNS.DecorationType.None);
             this.LogoAnimation.SetDecoration(this.pnl_MainMenue, BunifuAnimatorNS.DecorationType.None);
@@ -700,22 +700,6 @@
             this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 16;
             this.label3.Text = "label3";
-            // 
-            // bunifuDatepicker1
-            // 
-            this.bunifuDatepicker1.BackColor = System.Drawing.Color.SeaGreen;
-            this.bunifuDatepicker1.BorderRadius = 0;
-            this.PanelAnimation.SetDecoration(this.bunifuDatepicker1, BunifuAnimatorNS.DecorationType.None);
-            this.LogoAnimation.SetDecoration(this.bunifuDatepicker1, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuDatepicker1.ForeColor = System.Drawing.Color.White;
-            this.bunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.bunifuDatepicker1.FormatCustom = null;
-            this.bunifuDatepicker1.Location = new System.Drawing.Point(202, 23);
-            this.bunifuDatepicker1.Name = "bunifuDatepicker1";
-            this.bunifuDatepicker1.Size = new System.Drawing.Size(329, 66);
-            this.bunifuDatepicker1.TabIndex = 15;
-            this.bunifuDatepicker1.Value = new System.DateTime(2019, 12, 13, 19, 19, 18, 837);
-            this.bunifuDatepicker1.onValueChanged += new System.EventHandler(this.BunifuDatepicker1_onValueChanged);
             // 
             // label4
             // 
@@ -792,6 +776,15 @@
             animation2.TimeCoeff = 0F;
             animation2.TransparencyCoeff = 0F;
             this.PanelAnimation.DefaultAnimation = animation2;
+            // 
+            // monthCalendar1
+            // 
+            this.LogoAnimation.SetDecoration(this.monthCalendar1, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.monthCalendar1, BunifuAnimatorNS.DecorationType.None);
+            this.monthCalendar1.Location = new System.Drawing.Point(141, 79);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.ShowTodayCircle = false;
+            this.monthCalendar1.TabIndex = 17;
             // 
             // Form1
             // 
@@ -878,8 +871,8 @@
         private System.Windows.Forms.PictureBox pb_Contacts;
         private BunifuAnimatorNS.BunifuTransition LogoAnimation;
         private BunifuAnimatorNS.BunifuTransition PanelAnimation;
-        private Bunifu.Framework.UI.BunifuDatepicker bunifuDatepicker1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.MonthCalendar monthCalendar1;
     }
 }
 
