@@ -73,7 +73,7 @@
             this.bunifuDragControl3 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuDragControl4 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.pnl_MainMenue = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.sdafsad = new System.Windows.Forms.Label();
             this.bunifuDatepicker1 = new Bunifu.Framework.UI.BunifuDatepicker();
             this.label4 = new System.Windows.Forms.Label();
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
@@ -679,7 +679,7 @@
             // 
             // pnl_MainMenue
             // 
-            this.pnl_MainMenue.Controls.Add(this.label3);
+            this.pnl_MainMenue.Controls.Add(this.sdafsad);
             this.pnl_MainMenue.Controls.Add(this.bunifuDatepicker1);
             this.pnl_MainMenue.Controls.Add(this.label4);
             this.PanelAnimation.SetDecoration(this.pnl_MainMenue, BunifuAnimatorNS.DecorationType.None);
@@ -690,16 +690,16 @@
             this.pnl_MainMenue.Size = new System.Drawing.Size(700, 458);
             this.pnl_MainMenue.TabIndex = 2;
             // 
-            // label3
+            // sdafsad
             // 
-            this.label3.AutoSize = true;
-            this.LogoAnimation.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimation.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
-            this.label3.Location = new System.Drawing.Point(228, 261);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 16;
-            this.label3.Text = "label3";
+            this.sdafsad.AutoSize = true;
+            this.LogoAnimation.SetDecoration(this.sdafsad, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.sdafsad, BunifuAnimatorNS.DecorationType.None);
+            this.sdafsad.Location = new System.Drawing.Point(228, 261);
+            this.sdafsad.Name = "sdafsad";
+            this.sdafsad.Size = new System.Drawing.Size(35, 13);
+            this.sdafsad.TabIndex = 16;
+            this.sdafsad.Text = "label3";
             // 
             // bunifuDatepicker1
             // 
@@ -879,7 +879,7 @@
         private BunifuAnimatorNS.BunifuTransition LogoAnimation;
         private BunifuAnimatorNS.BunifuTransition PanelAnimation;
         private Bunifu.Framework.UI.BunifuDatepicker bunifuDatepicker1;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label sdafsad;
     }
 }
 
