@@ -124,7 +124,6 @@ namespace Kalender
 
         private void BunifuDatepicker1_onValueChanged(object sender, EventArgs e)
         {
-            label3.Text = bunifuDatepicker1.ActiveControl.Text;
         }
     }
 }
