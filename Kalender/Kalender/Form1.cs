@@ -24,6 +24,7 @@ namespace Kalender
 
         private void Label8_Click(object sender, EventArgs e)
         {
+
             Application.Exit();
         }
 
@@ -122,8 +123,23 @@ namespace Kalender
         {
         }
 
-        private void BunifuDatepicker1_onValueChanged(object sender, EventArgs e)
+        private void MonthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
         {
+            label3.Text = monthCalendar1.AccessibilityObject.Value;
+
+        }
+
+        private void Btn_addevent_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBox3_TextChanged(object sender, EventArgs e)
+        {
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
         }
     }
 }

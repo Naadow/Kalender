@@ -24,6 +24,7 @@ namespace Kalender
             {
                 databaseConnection.Open();
                 MySqlDataReader myReader = commandDatabase.ExecuteReader();
+                databaseConnection.Close();
             }
 
             catch (Exception ex)
