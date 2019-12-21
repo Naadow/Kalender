@@ -123,7 +123,21 @@ namespace Kalender
         {
         }
 
+        private void MonthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+        {
+            label3.Text = monthCalendar1.AccessibilityObject.Value;
 
+        }
+
+        private void Btn_addevent_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.pnl_Register = new System.Windows.Forms.Panel();
             this.lbl_Status_Register = new System.Windows.Forms.Label();
@@ -72,15 +72,26 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuDragControl3 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuDragControl4 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.pnl_MainMenue = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuDragControl5 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuDragControl6 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.pnl_MainMenue = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.txb_EndTime = new System.Windows.Forms.TextBox();
+            this.txb_StartTime = new System.Windows.Forms.TextBox();
+            this.txb_Title = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.monthCalendar2 = new System.Windows.Forms.MonthCalendar();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btn_addevent = new System.Windows.Forms.Button();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.LogoAnimation = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.PanelAnimation = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.pnl_Register.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_success_Register)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_error_Register)).BeginInit();
@@ -94,6 +105,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_Settings)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pnl_MainMenue.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuDragControl1
@@ -677,45 +689,6 @@
             this.bunifuDragControl4.TargetControl = null;
             this.bunifuDragControl4.Vertical = true;
             // 
-            // pnl_MainMenue
-            // 
-            this.pnl_MainMenue.Controls.Add(this.monthCalendar1);
-            this.pnl_MainMenue.Controls.Add(this.label3);
-            this.pnl_MainMenue.Controls.Add(this.label4);
-            this.PanelAnimation.SetDecoration(this.pnl_MainMenue, BunifuAnimatorNS.DecorationType.None);
-            this.LogoAnimation.SetDecoration(this.pnl_MainMenue, BunifuAnimatorNS.DecorationType.None);
-            this.pnl_MainMenue.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnl_MainMenue.Location = new System.Drawing.Point(97, 0);
-            this.pnl_MainMenue.Name = "pnl_MainMenue";
-            this.pnl_MainMenue.Size = new System.Drawing.Size(700, 458);
-            this.pnl_MainMenue.TabIndex = 2;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.LogoAnimation.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimation.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
-            this.label3.Location = new System.Drawing.Point(228, 261);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 16;
-            this.label3.Text = "label3";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.LogoAnimation.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimation.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(665, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(23, 24);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "X";
-            this.label4.Click += new System.EventHandler(this.Label4_Click);
-            // 
             // bunifuElipse2
             // 
             this.bunifuElipse2.ElipseRadius = 25;
@@ -735,56 +708,222 @@
             this.bunifuDragControl6.TargetControl = this.pnl_MainMenue;
             this.bunifuDragControl6.Vertical = true;
             // 
-            // LogoAnimation
+            // pnl_MainMenue
             // 
-            this.LogoAnimation.AnimationType = BunifuAnimatorNS.AnimationType.Mosaic;
-            this.LogoAnimation.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 20;
-            animation1.Padding = new System.Windows.Forms.Padding(30);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.LogoAnimation.DefaultAnimation = animation1;
+            this.pnl_MainMenue.Controls.Add(this.panel1);
+            this.pnl_MainMenue.Controls.Add(this.textBox2);
+            this.pnl_MainMenue.Controls.Add(this.textBox1);
+            this.pnl_MainMenue.Controls.Add(this.btn_addevent);
+            this.pnl_MainMenue.Controls.Add(this.monthCalendar1);
+            this.pnl_MainMenue.Controls.Add(this.label3);
+            this.pnl_MainMenue.Controls.Add(this.label4);
+            this.PanelAnimation.SetDecoration(this.pnl_MainMenue, BunifuAnimatorNS.DecorationType.None);
+            this.LogoAnimation.SetDecoration(this.pnl_MainMenue, BunifuAnimatorNS.DecorationType.None);
+            this.pnl_MainMenue.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnl_MainMenue.Location = new System.Drawing.Point(97, 0);
+            this.pnl_MainMenue.Name = "pnl_MainMenue";
+            this.pnl_MainMenue.Size = new System.Drawing.Size(700, 458);
+            this.pnl_MainMenue.TabIndex = 2;
             // 
-            // PanelAnimation
+            // panel1
             // 
-            this.PanelAnimation.AnimationType = BunifuAnimatorNS.AnimationType.Leaf;
-            this.PanelAnimation.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 1F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.PanelAnimation.DefaultAnimation = animation2;
+            this.panel1.Controls.Add(this.txb_EndTime);
+            this.panel1.Controls.Add(this.txb_StartTime);
+            this.panel1.Controls.Add(this.txb_Title);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.monthCalendar2);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.label6);
+            this.PanelAnimation.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
+            this.LogoAnimation.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(700, 458);
+            this.panel1.TabIndex = 21;
+            // 
+            // txb_EndTime
+            // 
+            this.LogoAnimation.SetDecoration(this.txb_EndTime, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.txb_EndTime, BunifuAnimatorNS.DecorationType.None);
+            this.txb_EndTime.Location = new System.Drawing.Point(457, 289);
+            this.txb_EndTime.Name = "txb_EndTime";
+            this.txb_EndTime.Size = new System.Drawing.Size(109, 20);
+            this.txb_EndTime.TabIndex = 21;
+            // 
+            // txb_StartTime
+            // 
+            this.LogoAnimation.SetDecoration(this.txb_StartTime, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.txb_StartTime, BunifuAnimatorNS.DecorationType.None);
+            this.txb_StartTime.Location = new System.Drawing.Point(457, 255);
+            this.txb_StartTime.Name = "txb_StartTime";
+            this.txb_StartTime.Size = new System.Drawing.Size(109, 20);
+            this.txb_StartTime.TabIndex = 20;
+            this.txb_StartTime.TextChanged += new System.EventHandler(this.TextBox3_TextChanged);
+            // 
+            // txb_Title
+            // 
+            this.LogoAnimation.SetDecoration(this.txb_Title, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.txb_Title, BunifuAnimatorNS.DecorationType.None);
+            this.txb_Title.Location = new System.Drawing.Point(457, 221);
+            this.txb_Title.Name = "txb_Title";
+            this.txb_Title.Size = new System.Drawing.Size(109, 20);
+            this.txb_Title.TabIndex = 19;
+            // 
+            // button1
+            // 
+            this.LogoAnimation.SetDecoration(this.button1, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.button1, BunifuAnimatorNS.DecorationType.None);
+            this.button1.Location = new System.Drawing.Point(141, 310);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(178, 41);
+            this.button1.TabIndex = 18;
+            this.button1.Text = "Add Event";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // monthCalendar2
+            // 
+            this.monthCalendar2.AllowDrop = true;
+            this.LogoAnimation.SetDecoration(this.monthCalendar2, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.monthCalendar2, BunifuAnimatorNS.DecorationType.None);
+            this.monthCalendar2.Location = new System.Drawing.Point(141, 79);
+            this.monthCalendar2.Name = "monthCalendar2";
+            this.monthCalendar2.ShowTodayCircle = false;
+            this.monthCalendar2.TabIndex = 17;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.LogoAnimation.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
+            this.label5.Location = new System.Drawing.Point(486, 79);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(33, 13);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Date:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.LogoAnimation.SetDecoration(this.label6, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.label6, BunifuAnimatorNS.DecorationType.None);
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Red;
+            this.label6.Location = new System.Drawing.Point(665, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(23, 24);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "X";
+            // 
+            // textBox2
+            // 
+            this.LogoAnimation.SetDecoration(this.textBox2, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.textBox2, BunifuAnimatorNS.DecorationType.None);
+            this.textBox2.Location = new System.Drawing.Point(457, 255);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(109, 20);
+            this.textBox2.TabIndex = 20;
+            // 
+            // textBox1
+            // 
+            this.LogoAnimation.SetDecoration(this.textBox1, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.textBox1, BunifuAnimatorNS.DecorationType.None);
+            this.textBox1.Location = new System.Drawing.Point(457, 221);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(109, 20);
+            this.textBox1.TabIndex = 19;
+            // 
+            // btn_addevent
+            // 
+            this.LogoAnimation.SetDecoration(this.btn_addevent, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.btn_addevent, BunifuAnimatorNS.DecorationType.None);
+            this.btn_addevent.Location = new System.Drawing.Point(141, 310);
+            this.btn_addevent.Name = "btn_addevent";
+            this.btn_addevent.Size = new System.Drawing.Size(178, 41);
+            this.btn_addevent.TabIndex = 18;
+            this.btn_addevent.Text = "Add Event";
+            this.btn_addevent.UseVisualStyleBackColor = true;
+            this.btn_addevent.Click += new System.EventHandler(this.Btn_addevent_Click);
             // 
             // monthCalendar1
             // 
+            this.monthCalendar1.AllowDrop = true;
             this.LogoAnimation.SetDecoration(this.monthCalendar1, BunifuAnimatorNS.DecorationType.None);
             this.PanelAnimation.SetDecoration(this.monthCalendar1, BunifuAnimatorNS.DecorationType.None);
             this.monthCalendar1.Location = new System.Drawing.Point(141, 79);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.ShowTodayCircle = false;
             this.monthCalendar1.TabIndex = 17;
+            this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.MonthCalendar1_DateChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.LogoAnimation.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
+            this.label3.Location = new System.Drawing.Point(486, 79);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(33, 13);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "Date:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.LogoAnimation.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Location = new System.Drawing.Point(665, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(23, 24);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "X";
+            this.label4.Click += new System.EventHandler(this.Label4_Click);
+            // 
+            // LogoAnimation
+            // 
+            this.LogoAnimation.AnimationType = BunifuAnimatorNS.AnimationType.Mosaic;
+            this.LogoAnimation.Cursor = null;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 20;
+            animation3.Padding = new System.Windows.Forms.Padding(30);
+            animation3.RotateCoeff = 0F;
+            animation3.RotateLimit = 0F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 0F;
+            animation3.TransparencyCoeff = 0F;
+            this.LogoAnimation.DefaultAnimation = animation3;
+            // 
+            // PanelAnimation
+            // 
+            this.PanelAnimation.AnimationType = BunifuAnimatorNS.AnimationType.Leaf;
+            this.PanelAnimation.Cursor = null;
+            animation4.AnimateOnlyDifferences = true;
+            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
+            animation4.LeafCoeff = 1F;
+            animation4.MaxTime = 1F;
+            animation4.MinTime = 0F;
+            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
+            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
+            animation4.MosaicSize = 0;
+            animation4.Padding = new System.Windows.Forms.Padding(0);
+            animation4.RotateCoeff = 0F;
+            animation4.RotateLimit = 0F;
+            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
+            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
+            animation4.TimeCoeff = 0F;
+            animation4.TransparencyCoeff = 0F;
+            this.PanelAnimation.DefaultAnimation = animation4;
             // 
             // Form1
             // 
@@ -819,6 +958,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.pnl_MainMenue.ResumeLayout(false);
             this.pnl_MainMenue.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -860,8 +1001,6 @@
         private System.Windows.Forms.PictureBox pb_error_Register;
         private System.Windows.Forms.PictureBox pb_success_Register;
         private System.Windows.Forms.Label lbl_Status_Register;
-        private System.Windows.Forms.Panel pnl_MainMenue;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel pnl_loggedin;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -871,8 +1010,21 @@
         private System.Windows.Forms.PictureBox pb_Contacts;
         private BunifuAnimatorNS.BunifuTransition LogoAnimation;
         private BunifuAnimatorNS.BunifuTransition PanelAnimation;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel pnl_MainMenue;
+        private System.Windows.Forms.Button btn_addevent;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox txb_EndTime;
+        private System.Windows.Forms.TextBox txb_StartTime;
+        private System.Windows.Forms.TextBox txb_Title;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.MonthCalendar monthCalendar2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
